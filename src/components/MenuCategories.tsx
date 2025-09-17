@@ -6,7 +6,7 @@ const menu = [
     return(<>
         {menu.map(item =>
         <div>
-            <header key={item.category}>{item.category}</header>
+            <header >{item.category}</header>
             <ul>
                 {item.items.map(fruits=><li key={fruits}>
                     {fruits}
