@@ -4,7 +4,7 @@ export default function ShoppingList() {
     return(
         <ul>
             {shoppingList.map(item=>
-            <li style={{textDecoration: item === "Eggs"? 'line-through' : "none"}}>
+            <li key={item} style={{textDecoration: item === "Eggs"? 'line-through' : "none"}}>
                 {item}
             </li>)
             }
